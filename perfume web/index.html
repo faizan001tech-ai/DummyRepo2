@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxePerfume - Premium Fragrances</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <span>Free Shipping on Orders Over $50</span>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="login.html" class="top-link">Login</a>
+                    <span class="mx-2">|</span>
+                    <a href="#" class="top-link">Wishlist</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <h2 class="brand-logo">LUXE<span>PERFUME</span></h2>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                
+                <div class="nav-icons">
+                    <a href="#" class="nav-icon"><i class="fas fa-search"></i></a>
+                    <a href="#" class="nav-icon"><i class="fas fa-user"></i></a>
+                    <a href="cart.html" class="nav-icon" id="openCartModal"><i class="fas fa-shopping-bag"></i></a>
+                    
+
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartModalLabel">Your Cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body" id="cart-modal-body">
+        <!-- Cart items will be inserted here dynamically -->
+      </div>
+      <div class="modal-footer justify-content-between">
+        <div class="fw-bold fs-5" id="modal-cart-total">Total: $0.00</div>
+        <div>
+          <a href="cart.html" class="btn btn-outline-secondary">View Full Cart</a>
+          <a href="checkout.html" class="btn btn-primary">Checkout</a>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="hero-title" data-aos="fade-up">Discover Your Signature Scent</h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200">
+                            Experience luxury fragrances crafted with the finest ingredients from around the world.
+                        </p>
+                        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                            <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                            <a href="#collections" class="btn btn-outline">Explore</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image" data-aos="zoom-in">
+                        <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Luxury Perfume">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section id="collections" class="collections-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Featured Collections</h2>
+                <p class="section-subtitle">Explore our exclusive fragrance families</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="collection-card" data-aos="fade-up">
+                        <div class="collection-image">
+                            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEBUPEA8QEBAQEA8QFhAQEBAPEBUVFREWFhUVFhUYHSggGBomHRUWIjEhJSsrLi4uFx8zODMsNygtLisBCgoKDg0OFRAQGC0dHR0tLSstKy0tLS0rKy0tNy0tLTUtLS0tLS0tKy0tKy01KystLS0tLS0tKystLSstKy0tLf/AABEIAOEA4QMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAQIEBQMGB//EAEgQAAEDAgMDCAQKCAUFAQAAAAEAAhEDIQQSMQVBUQYTIjJhcYGhQpGxwRQWI1JTcoKy0fAVQ1Ric5Ki4SQzY8LSBzST0/Gj/8QAGgEBAQEBAQEBAAAAAAAAAAAAAAECAwQFBv/EACgRAQEAAgIBBAIABwEAAAAAAAABAhEDITESEzJBBGEUIiNRcZHBBf/aAAwDAQACEQMRAD8A+4AQmhCAQhCAQhCAQhCAQsvAYh1WtUfmPNMc+k1u4lpAc88ZdmH2FqIBCEIBCEIBCqbR2lRw7M9eqym3i4wSeDRq49gXhts/9Q3OlmCpRu56sPNrPefUpaPeY3G06DDUrVGU2D0nuDR3DiexeH2z/wBRBdmCpZzpz1UEN72s1PjHcvHV21cQ/nK9V9V/F5mOwDRo7ArNLDBqz6hwxVSvinZ8RVfUO7MeiPqtFm+AXWjhQ1WITUEU00BUJCcIQJCkEIEmhCCUIUoSQfXUIVbGY6nSE1HAToNXHuAuVsWVzq12t6zmg6wSJ8BvVH4ZVe0llFzG/OqxnI4tpg3PeR4qvsuiHYqtVzGpkZRpNe4z1m844iLDrN0jfxQXMVjC1ucjJTBF3Al7iTAa1nEkgX9St0n5mhw0cAb63ErK2uc9ejRG7PWPe0ZWHwL5+ytGriGMBkgZWzlkTAHBB3XPEVMrHP8Amtc71CVm0dsGowOp4es4OplzXHmwyY6pOa11SwGy65a51WoZq0MhD3uc9pMlwjQSYNtNAN6C7yeZkwtMu1e1ju3pmfa4nxK1lnbIk0qQc1zTTpsaQ5pac4blIE6gXvpcLRQCFnbX25h8I2a9VrDuZ1qju5oue/ReD2xy/r1ZZhGcwzTnXgPqnuHVb5qWj3+1dr0MK3PXqtpjcCZc76rRd3gvC7Y/6hVKkswdPmxpz1UBz+9rNB4z3LynwZ1RxqVXOe92rnkucfEq5ToAblm0VH0alZ5qVnvqPPpPcXHuE6DsVqlhw3cu0JhQACYCs7Owpq1WUxbO4CeA3n1SvfYXC06LnCmxrAGC46xgQJO/XzQfOIXOlWa+cpnK80yd2YNBI8/I8FvcrqBy1HUwOdDC4HeTlv3nh3LyeBZ8H2c95u4lj/tCqD7JXn5Of05QrSQhpkA8QD6016QkJpgIIwhSIShAIUoRCBoThCD62ufMtzZ8rc8Zc0DNHCdYuV0QtgWJsCoGiqGguLsTWMC8BpytBOgs3etPEYYvcJe4MAuxvRzHtcLx2CFR5LD/AArIES6sf/2fCgbWzjnE+jhGR2TVfPsChgdnO5yrVdly1s5aROfK5rAARFoDP6uxX62Ca54qGQ4MNMwbOaSDld2SPMqygr7Pwoo0mUgZFNjWzETAuYVhYu3OVOFwdqtTNU+hp9Or4j0e8wvA7Y5cYrEyygPgtM2lpmsR2v8AR+zBHFNj6FtrlFhsIPlqoD4kUm9OqfsjQdpgdq8Htjl5ia8swzfg9M+nZ9Yjv0b4T3rzlHBScziSSZJNyTxJ3lXadIDcs2imzBlxL3lz3OuXOJc4niSblXaVEDcugCagE0JoEmhNBt8kGziQT6LKh8o969ZiTHOHjkHrn8F47kzXDMSyfTzsHfkLv9vmvUbUrwJ3Gx9x/PFYyynf6WRi7dPTnsC8tykAbgnMHpWA+1K9FtSrmcO4L5/y2xxbUZRm2TN2XLh7l5ObVi5Tpu4F00mHixn3Qu4Cp7GM4en9QeSvL243qMowmmELQSaaECQmmgaE0IPrCEIWwKhsPDOpYenTeIc1txINySTp3rJ29y2wuFlgfz9UW5qjDoPBztG92vYvAbY5XYzGS0O+D0j+rokgkcHVNT4QOxS0fRNu8sMLhJa5/OVR+ppQ98/vHRviZXgdscs8Zi5bTPwakfRpEmoR+9U19ULEw+AAV1lMDRZ2KlDAgXOuvirrKYGikF0p0y7RpMmBAJvw71AgmjB/KudTpRUeyczWkEtgwZ4XVj4FU+YfWFNxdOKa54uq2i8U6rm03kAhr3NaSDpErrG/cdDuKqEmEBMIBNATQUto4p1F1J7OsypnHeCLe31r01XbjK1ORIDhMHUdi8rtxksaeDiPWBHsKucl3B3RdppB7oXxeblzx5c5K3jlqrwxBJ0J7rlfOeVmLFXFOI0pxT8Wkz5k+pfTHgUTUYBAzA+Ef2XyTHUX867OCCXkmRxMrXFlbj3V5ct/T32wf+2p/VP3ir6o7DH+HZ3O+8VoL62HxjmSEJrYEITQJCaEDQuiSD1O3uXuFw0spk4mqLZaRBYD+9U0HhJ7F4DbHKfGY2WufzVI/qaMsaRwc6Zd427Fm0MGArbWAbk2K2HwQG5XGMATCmEApBJSQML0myKjAaIIJ6D+q0kZnZYMDfZwnt7V5wLpSqluh8NyixDZW1S3E1qeMc9otkpsoMDsxJJ6rZNoWRtDaOM+HRSA+B56Nn0aor5IZzmrdetHgvecmMKxr6mIFKnzrg1geQM2TKHeuSRPYtGrSpVHdJ0PDmuyTBlth0d7bdy4XObrrHgdvbTcawbg+arMy3bXDJzXkXyngtTA84cM41qdKk6WwykHBogm8EkAmdxuAFt7ToUmVX4gUmCo+m2XjrSDAE7p9ywKlQuMkyt4X1Tr6Yy6qMJgIhMBdGAAmmhByxVDnKbmDUiR9YXA8YjxWdydrZakcRK1wszHUuartqAQyp0hGgk9IeBnwhfK/wDQ49Wck/xRq8r6mRwI9MM/PmvOcosGC97o6rj5f/VuctTNGjU7KX3VQ2t0qVV3+pU8nALy8OWoufl32KP8OzuP3iryqbJHyDO4+0q2vu4fGISaaFsJNCEAhNOEBCaaEGEFIJBSAQMBSCApBAwmEgpBAwmF0w+HdUcGMaXOOgGq26HJyBmrVco1im3PA7SSPeg0uTFQCkRI1baf3G/3XkW0KvxjbWy1OY+CPZzkO5uenadN63cVQr0TkwtapTpxJNSnTJJiNSNLDcvPVMBiRjfhYxjHODMtqbucywZaGlmSZJ3LhOO7vc7b9ePT1nKN4LTcHo09/wC+V5qFq4E1KuYYytUjSOZaypYyOkBlhdMRsZsTSq5piGvblmdIcLX8FvjwuM0zllLemQEwpVKZaS1wLXAwQbEJLaBCcJoFC4bUpZ6B403Bw+q6Gu88qsKdNoJynR4LD9q39/BcPyeP3OLLEVOUIz7PpO/02eRhZ8TggTq8VXeMytjH0D+j2sOrTUYfs1XLLcyMDSHGm7zYV8Ti8NZ+VrZY+RZ9X3lWoXHAN+SYP3QrAC/QYfGMkhShELYSFJEIFCaEwgaE4QgwgFMBACkAgUKQCcKQCBAKUJwnCD0PJmnlpVKo6xqU6U8Gktn7y08Ti3BhA31KItwc9tvUVQ5P2wtT+PS+9TXeqJGXiaR7iDbzAVvhKlj8aYG/VV8LjZnMOEQTHiuvwCtUa12WkQ5ocAazwQCJ3U1TbgKwqZA2lB/1qn/rXmvPjGvayatLEjKOi2JIggHeuGBcHMptyhoNGDFuqIsN39kOwVRgkinlzN0rOJGZwEwaQnWYkKGGgPY0aCnU1+sF0485l4ZuNx8q3KLpczVMZqlEZiN5aYB9RWOtrbw+Sw38J3tCx4XSqQThMBNQJSp2IPaPaiEILWOObCB2+XDvIcW+5Y+2aPN0KdPg0N/pj3rYa3/Cxwr1PVzmYe1ZW3X53sZ2/wDFfnp51P01ksUWQ0Dg0DyU4UkQv0MmowUIhSARCojCcJpwgiiFKEIBCnCEVhgKQCAFMBAAJgJgKYQRAUgFINUgEG9sL/tav8al7Wn3LtPSHfT8qjlHk+2cPVH+ow+pq7Op3n6p9Tj+KuXxT7dqmGp1MPSdUzAMotgt1aXUw3NoRad9lgV8FhX1y5xqunnCYlsio3pg5QNRN9bxO5b7mN+C03upvqZKNKGsdleZazSXATMb+5YZx2F58c48Mc7MXZ6o6Po9YGL2jKdL7l8vv6el6KpQyUcuZ7pe13Ty5ulVDiOiBvJWZSMVWfw6o/qCv0zSNE8wZZzjJu/rB7ZHS07uM75VZtPpg8G1R6yvV+N5ycuT6U9tGWUexhH9FNZcLW20yGUh2O+6wLLhem+XOIwnClCcKKjCIUoRCC5l/wAMf4k+trVgAZ68/NJXo6P+S7sv5R7lhbPb0nHtXwZjv8mT9/8AW74XYRClCcL77mhCFOEQgjCFIBOEEE4UoThAoQpQhBjAKQCYCkGopQpNCcKTQgAFIBMBTDUG/wAnG/IVfrN9iuVWwATvA8jKr8mm/I1R2t9yuYxs0wRfKLjfota3EZzcYWUm03Cm9rWNZ0mxmygC7STwVX4XNTnAynfXom/ridApVqbi0QLgE7vnAe9cabTOl7mPFea/jYte7WgcYSA0c21uZpIbT4OBIs+2msK0xt57XLJDTw9IcFtUqZyiwGYkwdbzH57QuvHxzHwzcrfLO5RNgUu5/wDtWNC3eUrYFK+rCfurFhby8kRhACkAmAsqjClCcJwiLLP8hxkcI7pP+7yWRswWJ7Vfc2abx2A+73qrs4dHx9wXzMMNfm5f7dL8ViEKUIhfUc0YRCkiEChEKUIhBGEKUIhA4QnCaKxw1TARCkAgAEwEwFIBABqmAgBTag3uTZinU+tT83NC7VakZ+0R+fUuHJus3p0zq7I5u8nKZI9/grmNpgNedekwaaS4TbuXTDwxkr4um0Np5WgZ2km2sOaqtGmMxJFw07zwWjixLKZA0Y7s3hVMO0lxt6J9i2xfKLQMjn5RMtPrJV7Z9cuc0ng9vfBN1wcyKbhAF2iPEq5gKctY5tiC8GBOjju8VFjM29dlGfmvHqIHuWQAtjlA9vydMGSxriftGR+PiFkwuWXl0iMJwm2+l+6/sTe3KJdYaSSBfu13rHqka1UQE4UTiKYdlc8yLmGmAOjqTAHWC5OxwJHN084doXuLJsT1cvZGu4rN5MWpx5LLND2tP58lR2Y6Q4C8O3fnsVqti8jZLGyGhzg057fNk6m+5UMZjmGWjoXs1rxT1AALnD95p9fgvLZ/W9z9ab9F1pq8y75pHaeiPNFSllEuLW+M/dniPWvPU8Q5zs2ZkaMaSeoHGJG+TBi0gDjCr1qtRzgQ8PfaIJaAGgCJ4S0EnhwXb3qe1Ho3VWBwYHS4iYAdwn894U4WCC2k5rnOkjmw55ItMEiDcdWfFehhdMMvVO3PPH0owiFKEQujCMIhThEIFCFJCDJAUwEBSARQAmAmAmAgAruy8M2pUDXEgRNtTcCJ3a+S4sottmqNbN4hxP4eadLE0WHMH1OjvDct7RxnVYucn21MLXqK+zcOwAuDWkaEEtIjtmSsrH7fptIY9zIeWMBcemOkIJjUfmV5/au1mkyX1SJ6Tc5AFgdWCZ+0oNweEY1tSph6b3dYuqN5yI7ahJvPHzWLzf26dJxT7emxW1qTWAEObcgEEHW0ET4ri3aTGmQzEO3f5eUHd1nQPNeXrbQdBAbJvDTLTmPVgCYjh+Txp4qs+mXZiXNbEdRusATc6p/EZJ7Ee3Zj6bmgZHAkm5ewye9pKr/pzouDCGtbYuBzujMRDT4Hdu1XmqRqlzsxpZYcIDhAfvMNuROYXO7Rc3PIkDKIcQI+bHSM2gdGJ37uKzefOtTixjVdiWl7mODpEEkucDc+k5pE6zY+tVziGMcyWtBIzXaHnQEkl12gX37iqNDCEVDIsWzJlrS1t8zgNNRvOi41MQHNJDgAXyXEOAIMzEGYnjxXO5WtzGRsPxjnhpcSWZTYNN7AGSRpG7v4KhWxXOPOaWuJa6JkRqWAAGTcG1uMqWYOpsJrPDXZXDohwIAMaju77KtinOgFkQOsS5zi4gSZgXs8e5Z2ulhtYEh4JY17XNAMg5WiNDEEyDxjuUMDJa1zmmC6pJaXGwEEdg6o3aniqeFe4PNSoc1y8BxLdQfR1Ny63aoDaAJMtBawNa1mYwQDEEnUGT338At1agfULniGMLmZiQ6WnMHReL307LrlXh1NwIY4mHNDWgjU5ZMax7e1dHUnv6xyMAbuDczo0gXAkEzaZ7V1q0oHW6bnNiXFvCDJt26cFnvaqXwdlnPJbTzWpgR6QbeAY1FrfhSou+Vhpb0CG5mEhlzoRYHrDjwXSpjQCQXAmk4wesHOMCN4Nwd/BVRjZqEi7SSQ0REwAc0doG72Ba1YjdfQE0S3m3Ozgk9fVl8vYBA36+vawf8AltkyQA0nusvLU9oFrCCYGcgFnQgZRlyjhJNz2eGjybxfSNEmZEg7i5stdHeAD4FdOK6vbHJNxvohNEL1PMUIUoQgEKUIQZUJwgBSCKAFMBIBSAQVMSAHtcTcCMokS3fMHja+kk3VbDgFxMtIcelALupOltJv6lp1KAcI38ejoL7/AHbpWfi6AbBdHOOzNlrHEeg02Nuy+49i8fJNZV6sL/LFLE1gKhYxtNwY1zzlkybESRumBHZusrmJp5g0OpuMhriNAJbfN2aW/Jo4kVWjIBO53RBc50iQNYgA3g79666PFNwc8tyuLjBMZdABpENseB8c6adMRhsx6NyCLuLmzO8nd0neSlSxAs1oDgGNcY0gkBpgzH4Sb2UnnMxrXuyl0BrHZnCYEl0RaSNbd641GuDHN55odU67wC49UNgbgIPHcpoVqr2uBpMLmtJyHK3V2eHCx4X03Lo+o5jc2V0uBEkauDW9Enc2zt9+26VPAtYxjBUBD3Te4c5wOYBrd2WyuYidBLn2Ac0TlcRGp01MAcLwtChiHOygCoTbpjK4gl06ixuY46JvbBezKHEtYflHW0m82mXRAt4p1QW0zUDmNJBAYMweSIbqTu1nt7VQZRbfpuc50g1CGlrB6QFzmcZ89bppGtXygMdVu6xApkgAgyAIv2n+wTxGNDBZhDqhdGUSBYAGJ1sdSdFSw1NrnMILYOUgkZnGM1wSOOpO8BOvUDjLnAtIMwbmXExJIDZ371NK408S2Q3KOmAxrYkNBggGZnf7bqzhyGUnuDmkyHS1oblEiLAXIHqVEY0CzGNbDwTEvMbheSq+JxJ6oDvS1m8uBEz6pV0jcFanTALnWbHWMS6JLjv1j1LC2njOdeTfm4DQXAaATHgd6pgdHS51dJki29cCSTlE3E3LjHjvVkSm9pkyDx35nTvTqlxuBuHHSZPcuuWRN9QJOuilTeIjt3GAZC1s0iwk3aZFtSbcO8LR2VULKlN+gzs04ZocO6CVzFOYGUzAgAXN+K0th4M1KrZYYa7M60AAbvWpO7EutV7GE04Thet5UUKUJwgElJJBlgKQCYapAJpQAmAmApAIOddpNN0ajI7h1ajT+Kx9p9SQwCHklzSfSadXaaEW3StyqwlrgDlzNc2ZixF7ryOOe4khz54g3EmNO8Lz8s7d+K9O7GAZXPfDiXGdXxBAyknjEnsUqWIYzK1kueS9pLi5znZrjPui3DcqJmJFyBwJdqPVG5cRuIMGXa2G+b8dfNcnTbZxGLDPlXZXVSHtDY5u+YSYkxoCOHYsnE4sEQIDTJM9Ynv8TdcqrwSZOYnU8Ym//wAUCwjfY7gUA+u55AD8piARAgbo4DwU2uc3fO4/2iybRB8d/kUzBteTr37kRzzufEmco0ufJdAy190T5H2rvhME93UY8j91hie/1rRobDrn0A3TrOFx3LUxtS5SMyHdIaTIsRoBECO31rm0EwJnKZjQid/tXpG8nHnrVGNnUNaTu8Fcw3J+mwXc5xtwHqWpx5M3kjxnwUzmiATMyXb9OA/suuIo3zcQN3Ze/Bexx2GoUKTqppNdlHpdKSbAX4kheQp7KOJdnqdJzuI6I7Gt0A7Ar7VScjNqVGzHO0mkzAdVp093BxCt4TZ7XkZcThJJ/aaRMcIaTZblDke0XMDsAAVynyfpt3LU4kvIq0+SQcOlWlpA6gkGN4KuUOStBvWL3xxIaNZGgnzVrDUOZMtnLvbu7+9aUrcwkYuVVKGzKLDLabQbCTJNu9W2tiwAA4CwTQtyM7CE0QqhIThCBoQhBU5kp8wVp8ynzKKzRRKkKB4LR5pPm00M44ckRGoIXz/G12Ne4OqXDhaSCIEDyX1HIVhbQ5J4Ou4vq4Wk9xJJJB1OpssZYeprHPTwFfblFoIztBJJ1g2giPUFxp7UpPj5Vre1zmgX817v4i7P/YqP8pUhyH2f+w0P5Vn2o17lePouwx62NoN7hUede0BXqDtnjrY3Mf3Rl9oK9K3kXgBpgqP8q6Dkfgf2Oj/IFqccS51j0cdsxv6xjoi7nPPlortHbmBb1H0m/VZHuV34pYL9ko/yBS+KeD/ZKX8qvpZ2r/GXC/Tt80/jHhfpm+a7Hklg/wBlp+AI96XxQwf7Mz1vHvV1U6c/jFhvpm+afxgw30zfNS+J2D/Zx/NU/FR+JuD+g/rqfimqdM/bW1KNZrGNqtPyoJHZldHnC0dnBgAiFH4mYP6E/wDkq/8AJdaXJTDN6oqjuxFf/kk2LxqjiqtSsJsug5P0tM1b/wA9T8Vwr8laDxDnYnwxWIZ91wVEX4hu8gd5W9sjZOak17z0SJa1u9puCT3QvPUORmEZoyqfrV67/vOK36VItptpsqPa1jQ0AFpgAQBcINCpgaTROVotvP4ry2I2jTpuyvcAeC0q2De7XEVPVSn7qpO5OUnHNUdUe7i4s9zUFb9MUfpB5o/TNH54V1vJ7Dj9UPWVIbAw/wBC3zU1RQ/TFL5/tTG1aZ9L2q/+gqH0LfNSGxaH0QTQo/pOn85C0P0PR+YEK6F1NCFQBAQhA1FCEQBBQhAkIQgaEIQIJoQgAhCEESmEIQMJoQgFJCEAUk0IBATQgEimhA0IQg//2Q==" alt="Floral Collection">
+                        </div>
+                        <div class="collection-content">
+                            <h3>Floral Elegance</h3>
+                            <p>Delicate and romantic floral scents</p>
+                            <a href="shop.html?category=floral" class="collection-link">Discover →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="collection-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="collection-image">
+                            <img src="https://giftpoint.com.pk/cdn/shop/files/VinsumWoodyForMenEauDePerfum100ml.png?v=1754568278" alt="Woody Collection">
+                        </div>
+                        <div class="collection-content">
+                            <h3>Woody Mystique</h3>
+                            <p>Rich and earthy woody fragrances</p>
+                            <a href="shop.html?category=woody" class="collection-link">Discover →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="collection-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="collection-image">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTT1p4zmOXqzydOU2c0lP3mMkV91W9xJQpo0Q&s" alt="">
+                            </div>
+                        <div class="collection-content">
+                            <h3>Fresh Citrus</h3>
+                            <p>Bright and energizing citrus notes</p>
+                            <a href="shop.html?category=fresh" class="collection-link">Discover →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Best saller -->
+    <section class="products-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Best Sellers</h2>
+                <p class="section-subtitle">Our most loved fragrances</p>
+            </div>
+            
+            <div class="row g-4" id="featured-products">
+                <!-- Products will be loaded via JavaScript -->
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="shop.html" class="btn btn-outline-primary">View All Products</a>
+            </div>
+        </div>
+    </section>
+<!-- PRODUCT VIEW MODAL -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="productTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body d-flex flex-column flex-md-row">
+        <img id="productImage" src="" class="img-fluid mb-3 mb-md-0 me-md-3" style="max-width: 300px;" alt="Product Image">
+        <div>
+          <p><strong>Brand:</strong> <span id="productBrand"></span></p>
+          <p><strong>Price:</strong> $<span id="productPrice"></span></p>
+          <p><strong>Description:</strong> <span id="productDescription"></span></p>
+          <p><strong>Category:</strong> <span id="productCategory"></span></p>
+          <p><strong>Availability:</strong> <span id="productStock"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Testimonials -->
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2 class="section-title">Customer Love</h2>
+                <p class="section-subtitle">What our customers say about us</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"The most amazing fragrance I've ever owned! Lasts all day."</p>
+                        <div class="customer">
+                            <strong>Sarah Johnson</strong>
+                            <span>New York</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p>"Excellent customer service and fast shipping. Will order again!"</p>
+                        <div class="customer">
+                            <strong>Michael Chen</strong>
+                            <span>California</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p>"The packaging was beautiful and the scent is absolutely divine."</p>
+                        <div class="customer">
+                            <strong>Emma Davis</strong>
+                            <span>London</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to get special offers and fragrance tips</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h4>LUXE PERFUME</h4>
+                    <p>Crafting unforgettable fragrances since 2010. Experience luxury in every bottle.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h5>Shop</h5>
+                    <ul>
+                        <li><a href="shop.html">All Products</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h5>Information</h5>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h5>Customer Care</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Track Order</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2">
+                    <h5>Contact</h5>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@luxeperfume.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom text-center mt-5">
+                <p>&copy; 2024 LuxePerfume. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+    <script src="gsap-animations.js"></script>
+
+    
+</body>
+</html>

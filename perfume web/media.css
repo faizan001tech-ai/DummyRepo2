@@ -1,0 +1,178 @@
+/* Mobile First Approach */
+
+/* Extra Small Devices (phones, 576px and down) */
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .collection-image,
+    .product-image {
+        height: 200px;
+    }
+    
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Small Devices (phones, 576px and up) */
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+    
+    .hero-title {
+        font-size: 3rem;
+    }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+    
+    .hero-title {
+        font-size: 3.5rem;
+    }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/* Specific Mobile Adjustments */
+@media (max-width: 768px) {
+    .top-bar .text-end {
+        text-align: left !important;
+        margin-top: 0.5rem;
+    }
+    
+    .navbar-nav {
+        text-align: center;
+        margin: 1rem 0;
+    }
+    
+    .nav-icons {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .hero-image {
+        margin-top: 2rem;
+    }
+    
+    .hero-image img {
+        height: 400px;
+    }
+    
+    .newsletter-form .input-group {
+        flex-direction: column;
+    }
+    
+    .newsletter-form .form-control {
+        border-radius: var(--border-radius);
+        margin-bottom: 0.5rem;
+    }
+    
+    .newsletter-form .btn {
+        border-radius: var(--border-radius);
+        width: 100%;
+    }
+}
+
+/* Tablet Landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 80vh;
+    }
+    
+    .hero-image img {
+        height: 400px;
+    }
+}
+
+/* High-resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-image img {
+        image-rendering: -webkit-optimize-contrast;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .top-bar,
+    .navbar,
+    .hero-buttons,
+    .footer-section {
+        display: none;
+    }
+    
+    .hero-section {
+        min-height: auto;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-dark: #FFFFFF;
+        --text-light: #A0A0A0;
+        --bg-light: #1A1A1A;
+        --white: #2D2D2D;
+    }
+    
+    .collection-card,
+    .product-card,
+    .testimonial-card {
+        background: #2D2D2D;
+        color: #FFFFFF;
+    }
+}
